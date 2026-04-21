@@ -1,5 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import Navigator from './navigation/Navigator';
 
 export default function App() {
   return (
@@ -8,6 +11,9 @@ export default function App() {
       <Text>BLOOD PRESSURE AND BLOOD SUGAR LEVELS</Text>
       <StatusBar style="auto" />
     </View>
+    // <NavigationContainer>
+    //   <Navigator />
+    // </NavigationContainer>
   );
 }
 
