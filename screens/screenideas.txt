@@ -1,4 +1,5 @@
 HomeScreen - displays data inputed over set period of time
 LogScreen - input data about bp and bg levels
 Summary Screen - displays data for medical professionals
-Trends - shows data in graph format for personal tracking 
+Trends - shows data in graph format for personal tracking
+Symptoms Screen - displaying symptoms related to high/low sugars and blood pressure
