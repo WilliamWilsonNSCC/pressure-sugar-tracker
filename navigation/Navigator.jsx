@@ -18,7 +18,7 @@ function DashboardStack(){
     return(
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="DashboardMain" component={DashboardScreen} />
-            <Stack.Screen name="Logging" component={LogScreen} />
+            <Stack.Screen name="LogReading" component={LogScreen} />
         </Stack.Navigator>
     );
 }
@@ -40,17 +40,17 @@ export default function Navigator(){
                 const icons = {
                     Dashboard: focused ? 'home' : 'home-outline',
                     Symptoms: focused? 'body' : 'body-outline',
-                    Trends: focused ? 'stats-chart' : 'stats-charted-outline',
+                    Trends: focused ? 'stats-chart' : 'stats-chart-outline',
                     Summary: focused ? 'document-text' : 'document-text-outline',
                 };
                 return <Ionicons name={icons[route.name]} size={size} color={color} />;
             },
         })}
         >
-            <Tab.Screen name="Dashboard" components={DashboardStack} options={{ title: 'Home' }} />
-            <Tab.Screen name="Symptoms" components={SymptomScreen} options={{ title: 'Symptoms' }} />
-            <Tab.Screen name="Trends" components={TrendsScreen} options={{ title: 'Trends' }} />
-            <Tab.Screen name="Summary" components={SummaryScreen} options={{ title: 'Summary' }} />
+            <Tab.Screen name="Dashboard" component={DashboardStack} options={{ title: 'Home' }} />
+            <Tab.Screen name="Symptoms" component={SymptomScreen} options={{ title: 'Symptoms' }} />
+            <Tab.Screen name="Trends" component={TrendsScreen} options={{ title: 'Trends' }} />
+            <Tab.Screen name="Summary" component={SummaryScreen} options={{ title: 'Summary' }} />
         </Tab.Navigator>
     );
 }
