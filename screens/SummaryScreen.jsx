@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   safe:     { flex: 1, backgroundColor: COLOURS.background },
   scroll:   { padding: SPACING.md, paddingBottom: SPACING.xl },
 
-  header:    { marginBottom: SPACING.lg },
+  header:    { paddingTop: SPACING.lg, marginBottom: SPACING.lg },
   title:     { fontSize: FONTS.heading, fontWeight: 'bold', color: COLOURS.primary },
   subtitle:  { fontSize: FONTS.body, color: COLOURS.muted, marginTop: 2 },
   generated: { fontSize: FONTS.small, color: COLOURS.muted, marginTop: 4 },

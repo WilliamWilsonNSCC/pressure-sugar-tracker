@@ -34,7 +34,7 @@ export default function Navigator(){
                 borderTopColor: COLOURS.border,
                 paddingBottom: 6,
                 paddingTop: 6,
-                height: 60,
+                height: 70,
             },
             tabBarIcon: ({ focused, color, size }) => {
                 const icons = {

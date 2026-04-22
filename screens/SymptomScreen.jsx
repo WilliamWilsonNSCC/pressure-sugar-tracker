@@ -45,7 +45,8 @@ export default function SymptomScreen(){
         }
         setSaving(true);
         const success = await saveSymptoms({
-            symptoms: selected, notes,
+            symptoms: selected, 
+            notes,
             timestamp: Date.now(),
         });
         setSaving(false);
@@ -124,7 +125,7 @@ const styles = StyleSheet.create({
   safe:   { flex: 1, backgroundColor: COLOURS.background },
   scroll: { padding: SPACING.md, paddingBottom: SPACING.xl },
 
-  header:   { marginBottom: SPACING.lg },
+  header:   { paddingTop: SPACING.lg, marginBottom: SPACING.lg },
   title:    { fontSize: FONTS.heading, fontWeight: 'bold', color: COLOURS.primary },
   subtitle: { fontSize: FONTS.body, color: COLOURS.muted, marginTop: 4 },
 

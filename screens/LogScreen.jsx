@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     paddingTop:   SPACING.xl,
     alignItems:   'center',
   },
-  backBtn:     { alignSelf: 'flex-start', marginBottom: SPACING.sm },
+  backBtn:     { alignSelf: 'flex-start', paddingTop: SPACING.md, marginBottom: SPACING.sm },
   backText:    { color: '#fff', fontSize: FONTS.body, opacity: 0.85 },
   headerIcon:  { fontSize: 36, marginBottom: SPACING.xs },
   headerTitle: { fontSize: FONTS.heading, fontWeight: 'bold', color: '#fff' },

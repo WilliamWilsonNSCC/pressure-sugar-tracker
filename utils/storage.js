@@ -62,8 +62,8 @@ export async function loadGlucoseReadings(){
 export async function saveSymptoms(entry){
     // reading = { systolic, diastolic, notes, timestamp }
     try{
-        const existing = await loadBPReadings();
-        const updated = [reading, ...existing];
+        const existing = await loadSymptoms();
+        const updated = [entry, ...existing];
         await AsyncStorage.setItem(KEYS.SYMPTOMS, JSON.stringify(updated));
         return true;
     }catch(e){
@@ -93,7 +93,7 @@ export async function getLastN(loaderFn, n = 7){
 // Formats a timestamp to a short date string e.g. "Apr 18"
 export function formatDate(timestamp){
     const d = new Date(timestamp);
-    return d.toDateString('en-CA', { month: 'short', day: 'numeric' });
+    return d.toLocaleDateString('en-CA', { month: 'short', day: 'numeric' });
 }
 
 // Formats a timestamp to a time string e.g. "2:30 PM"
@@ -103,7 +103,7 @@ export function formatTime(timestamp){
 }
 
 // Clears all stored data (usedful for testing / reset)
-export async function cleraAllData() {
+export async function clearAllData() {
     try{
         await AsyncStorage.multiRemove(Object.values(KEYS));
         return true;

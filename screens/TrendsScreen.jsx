@@ -177,7 +177,7 @@ function StatsSummary({ data, condition }) {
 const styles = StyleSheet.create({
   safe:      { flex: 1, backgroundColor: COLOURS.background },
   scroll:    { padding: SPACING.md, paddingBottom: SPACING.xl },
-  pageTitle: { fontSize: FONTS.heading, fontWeight: 'bold', color: COLOURS.primary, marginBottom: SPACING.md },
+  pageTitle: { fontSize: FONTS.heading, fontWeight: 'bold', color: COLOURS.primary, paddingTop: SPACING.lg, marginBottom: SPACING.md },
 
   tabRow: {
     flexDirection:  'row',
