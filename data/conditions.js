@@ -21,7 +21,7 @@ export const CONDITIONS = {
 
     blood_glucose: {
         key: 'blood_glucose',
-        label: 'Blood Glucose',
+        label: 'Blood Glucose (sugars)',
         unit: 'mmol/L',
         safeMin: 4.0,
         safeMax: 7.0,
