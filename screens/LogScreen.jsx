@@ -1,0 +1,1 @@
+// LogScreen - input data about bp and bg levels

@@ -4,14 +4,14 @@ import Navigator from './navigation/Navigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>THIS APP IS GOING TO HELP TRACK</Text>
-      <Text>BLOOD PRESSURE AND BLOOD SUGAR LEVELS</Text>
-      <StatusBar style="auto" />
-    </View>
-    // <NavigationContainer>
-    //   <Navigator />
-    // </NavigationContainer>
+    // <View style={styles.container}>
+    //   <Text>THIS APP IS GOING TO HELP TRACK</Text>
+    //   <Text>BLOOD PRESSURE AND BLOOD SUGAR LEVELS</Text>
+    //   <StatusBar style="auto" />
+    // </View>
+    <NavigationContainer>
+      <Navigator />
+    </NavigationContainer>
   );
 }
 
