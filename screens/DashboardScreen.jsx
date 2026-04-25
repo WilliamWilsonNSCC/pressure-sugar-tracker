@@ -77,7 +77,7 @@ export default function DashboardScreen({ navigation }) {
   );
 }
 
-// ── ReadingCard ───────────────────────────────────────────────────────────────
+// Reading Card
 
 function ReadingCard({ condition, reading, displayValue, primaryValue, onLog }) {
   const status = primaryValue
@@ -130,7 +130,7 @@ function ReadingCard({ condition, reading, displayValue, primaryValue, onLog }) 
   );
 }
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
+// Helper
 
 function getTimeOfDay() {
   const h = new Date().getHours();
@@ -139,7 +139,6 @@ function getTimeOfDay() {
   return 'evening';
 }
 
-// ── Styles ────────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
   safe:        { flex: 1, backgroundColor: COLOURS.background },

@@ -109,7 +109,7 @@ export default function SummaryScreen() {
   );
 }
 
-// ── Sub-components ────────────────────────────────────────────────────────────
+// Sub-components
 
 function OverviewStat({ label, value, colour }) {
   return (
@@ -189,7 +189,6 @@ function EmptyRow({ message }) {
   );
 }
 
-// ── Styles ────────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
   safe:     { flex: 1, backgroundColor: COLOURS.background },

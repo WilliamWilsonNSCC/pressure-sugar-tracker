@@ -142,7 +142,7 @@ export default function TrendsScreen() {
   );
 }
 
-// ── Stats Summary ─────────────────────────────────────────────────────────────
+// Stats Summary
 
 function StatsSummary({ data, condition }) {
   const values = data.map(d => d.value);
@@ -172,7 +172,6 @@ function StatsSummary({ data, condition }) {
   );
 }
 
-// ── Styles ────────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
   safe:      { flex: 1, backgroundColor: COLOURS.background },

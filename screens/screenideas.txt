@@ -3,3 +3,12 @@ LogScreen - input data about bp and bg levels
 Summary Screen - displays data for medical professionals
 Trends - shows data in graph format for personal tracking
 Symptoms Screen - displaying symptoms related to high/low sugars and blood pressure
+
+TreandsScreen - const glRaw and bpRaw = await getLastN change 7
+to amount of days wanted to store
+
+SummaryScreen - setBpReadings(bp.slice(0, 14)); 
+setGlucoseReadings(glucose.slice(0, 14));
+setSymptoms(symp.slice(0, 14));
+Change 14 to the amount of days displayed in Summary page for 
+professionals

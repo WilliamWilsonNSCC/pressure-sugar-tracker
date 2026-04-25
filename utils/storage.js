@@ -83,8 +83,7 @@ export async function loadSymptoms(){
 }
 
 // Shared helpers
-
-// Return alst N readings for a given loader function
+// Return last N readings for a given loader function
 export async function getLastN(loaderFn, n = 7){
     const all = await loaderFn();
     return all.slice(0, n).reverse(); // Oldest first for chart
