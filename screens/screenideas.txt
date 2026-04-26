@@ -12,3 +12,8 @@ setGlucoseReadings(glucose.slice(0, 14));
 setSymptoms(symp.slice(0, 14));
 Change 14 to the amount of days displayed in Summary page for 
 professionals
+
+Future Possible Improvements:
+Cloud storage for phone transfers
+Notifications for data entry 
+Data download to share with medical professionals via email or PDF

@@ -41,7 +41,7 @@ export const CONDITIONS = {
 
 export function getSafetyStatus(conditionKey, value){
     const cond = CONDITIONS[conditionKey];
-    if(!cond) return 'safe';
+    if(!cond) return 'unknown';
     const v = parseFloat(value);
     if(isNaN(v)) return 'safe';
     if(v >= cond.safeMin && v <= cond.safeMax) return 'safe';
